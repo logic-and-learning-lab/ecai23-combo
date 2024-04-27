@@ -1,0 +1,2 @@
+f(A):- cell(A,B,E,C),white(E),cell(A,F,D,C),black(D),samefile(F,B).
+%time,61.132076025009155

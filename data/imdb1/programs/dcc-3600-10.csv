@@ -1,0 +1,2 @@
+f(A,B):- movie(C,B),movie(C,A).
+%time,2.4283008575439453

@@ -1,0 +1,3 @@
+f(A,B):- movie(C,B),actor(A),director(B),movie(C,A).
+f(A,B):- gender(A,D),movie(C,B),gender(B,D),movie(C,A).
+%time,60.95008683204651

@@ -1,0 +1,2 @@
+f(A):- has_car(A,C),has_car(A,B),long(B),two_wheels(B),three_wheels(C).
+%time,3.6021480560302734

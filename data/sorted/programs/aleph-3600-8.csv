@@ -1,0 +1,8 @@
+f(A):-head(A,B),tail(A,C),head(C,D),geq(D,B),f(C).
+f(E):-tail(E,F),tail(F,G),head(G,H),odd(H),f(G).
+f(I):-head(I,J),decrement(J,K),decrement(K,L),decrement(L,M),one(M).
+f(N):-tail(N,O),head(O,P),tail(O,Q),head(Q,R),decrement(R,P).
+f(S):-head(S,T),tail(S,U),head(U,V),decrement(V,W),decrement(W,T).
+f([21,49,76]).
+f([8,16,22,27,33,45,55,63,67,72,73,80,89,94,100,101]).
+%time,0.8972811698913574

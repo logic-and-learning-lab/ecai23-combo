@@ -1,0 +1,175 @@
+:-style_check(-discontiguous).
+
+:-style_check(-discontiguous).
+
+
+distance([X1,Y1],[X2,Y2],D) :-
+    nonvar(X1),
+    nonvar(X2),
+    nonvar(Y1),
+    nonvar(Y2),
+    D1 is abs(X1-X2),
+    D2 is abs(Y1-Y2),
+    D is max(D1,D2).
+
+king(k).
+rook(r).
+white(w).
+black(b).
+one(1).
+two(2).
+three(3).
+
+samerank([X,_],[X,_]).
+samefile([_,Y],[_,Y]).
+
+nextrank([1,_],[2,_]).
+nextrank([2,_],[1,_]).
+nextrank([2,_],[3,_]).
+nextrank([3,_],[2,_]).
+nextrank([3,_],[4,_]).
+nextrank([4,_],[3,_]).
+nextrank([4,_],[5,_]).
+nextrank([5,_],[4,_]).
+nextrank([5,_],[6,_]).
+nextrank([6,_],[5,_]).
+nextrank([6,_],[7,_]).
+nextrank([7,_],[6,_]).
+nextrank([7,_],[8,_]).
+nextrank([8,_],[7,_]).
+
+nextfile([_,1],[_,2]).
+nextfile([_,2],[_,1]).
+nextfile([_,2],[_,3]).
+nextfile([_,3],[_,2]).
+nextfile([_,3],[_,4]).
+nextfile([_,4],[_,3]).
+nextfile([_,4],[_,5]).
+nextfile([_,5],[_,4]).
+nextfile([_,5],[_,6]).
+nextfile([_,6],[_,5]).
+nextfile([_,6],[_,7]).
+nextfile([_,7],[_,6]).
+nextfile([_,7],[_,8]).
+nextfile([_,8],[_,7]).
+
+cell(0,[2, 1], w, r).
+cell(0,[3, 5], b, k).
+cell(0,[1, 1], w, k).
+cell(1,[3, 2], w, r).
+cell(1,[2, 2], b, k).
+cell(1,[4, 1], w, k).
+cell(2,[4, 2], w, r).
+cell(2,[2, 2], b, k).
+cell(2,[4, 3], w, k).
+cell(3,[2, 1], w, r).
+cell(3,[2, 7], b, k).
+cell(3,[3, 1], w, k).
+cell(4,[3, 4], w, r).
+cell(4,[7, 8], b, k).
+cell(4,[4, 3], w, k).
+cell(5,[7, 2], w, r).
+cell(5,[8, 6], b, k).
+cell(5,[6, 2], w, k).
+cell(6,[2, 7], w, r).
+cell(6,[3, 3], b, k).
+cell(6,[1, 6], w, k).
+cell(7,[5, 6], w, r).
+cell(7,[7, 5], b, k).
+cell(7,[4, 5], w, k).
+cell(8,[7, 1], w, r).
+cell(8,[4, 8], b, k).
+cell(8,[8, 2], w, k).
+cell(9,[3, 2], w, r).
+cell(9,[2, 6], b, k).
+cell(9,[3, 1], w, k).
+cell(10,[8, 7], w, r).
+cell(10,[7, 3], b, k).
+cell(10,[8, 6], w, k).
+cell(11,[2, 3], w, r).
+cell(11,[4, 8], b, k).
+cell(11,[1, 3], w, k).
+cell(12,[7, 6], w, r).
+cell(12,[8, 6], b, k).
+cell(12,[6, 5], w, k).
+cell(13,[6, 8], w, r).
+cell(13,[3, 7], b, k).
+cell(13,[7, 7], w, k).
+cell(14,[5, 7], w, r).
+cell(14,[2, 8], b, k).
+cell(14,[4, 6], w, k).
+cell(15,[8, 8], w, r).
+cell(15,[6, 5], b, k).
+cell(15,[7, 7], w, k).
+cell(16,[1, 4], w, r).
+cell(16,[6, 5], b, k).
+cell(16,[2, 3], w, k).
+cell(17,[2, 6], w, r).
+cell(17,[5, 7], b, k).
+cell(17,[3, 7], w, k).
+cell(18,[7, 7], w, r).
+cell(18,[1, 2], b, k).
+cell(18,[8, 6], w, k).
+cell(19,[4, 5], w, r).
+cell(19,[3, 4], b, k).
+cell(19,[5, 6], w, k).
+cell(20,[7, 3], b, k).
+cell(20,[8, 4], b, k).
+cell(20,[2, 5], w, r).
+cell(21,[2, 4], b, r).
+cell(21,[2, 2], b, k).
+cell(21,[6, 8], b, r).
+cell(22,[4, 8], b, k).
+cell(22,[7, 4], w, r).
+cell(22,[2, 3], w, k).
+cell(23,[1, 3], b, r).
+cell(23,[3, 3], w, k).
+cell(23,[2, 4], b, r).
+cell(24,[7, 7], b, r).
+cell(24,[6, 5], w, k).
+cell(24,[2, 8], w, k).
+cell(25,[7, 3], b, r).
+cell(25,[7, 1], w, r).
+cell(25,[3, 4], b, k).
+cell(26,[4, 6], w, k).
+cell(26,[6, 3], b, r).
+cell(26,[1, 8], b, k).
+cell(27,[5, 3], w, k).
+cell(27,[6, 6], w, k).
+cell(27,[6, 1], b, r).
+cell(28,[6, 7], w, r).
+cell(28,[7, 7], b, r).
+cell(28,[8, 3], w, r).
+cell(29,[2, 7], w, k).
+cell(29,[6, 4], w, k).
+cell(29,[4, 5], b, r).
+cell(30,[2, 4], b, k).
+cell(30,[4, 4], b, k).
+cell(30,[5, 8], w, k).
+cell(31,[1, 6], b, r).
+cell(31,[3, 5], b, r).
+cell(31,[1, 7], b, r).
+cell(32,[2, 3], b, r).
+cell(32,[7, 1], b, k).
+cell(32,[7, 3], b, k).
+cell(33,[7, 7], b, k).
+cell(33,[1, 1], w, k).
+cell(33,[2, 3], b, k).
+cell(34,[7, 4], b, r).
+cell(34,[6, 6], w, r).
+cell(34,[5, 3], w, r).
+cell(35,[5, 5], w, r).
+cell(35,[8, 6], b, k).
+cell(35,[4, 3], b, r).
+cell(36,[3, 5], w, r).
+cell(36,[5, 1], b, r).
+cell(36,[7, 7], w, k).
+cell(37,[8, 4], w, k).
+cell(37,[7, 3], b, k).
+cell(37,[2, 3], b, k).
+cell(38,[1, 5], w, r).
+cell(38,[5, 8], b, r).
+cell(38,[1, 3], w, r).
+cell(39,[4, 5], b, r).
+cell(39,[1, 3], b, k).
+cell(39,[2, 4], b, k).

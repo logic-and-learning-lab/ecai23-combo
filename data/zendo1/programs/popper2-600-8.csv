@@ -1,0 +1,2 @@
+zendo(A):- piece(A,C),contact(C,B),size(B,D),small(D).
+%time,2.0012810230255127

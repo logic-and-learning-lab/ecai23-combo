@@ -1,0 +1,5 @@
+zendo(A):- piece(A,B),coord1(B,C),piece(A,D),green(D),coord1(D,C),lhs(B).
+zendo(A):- piece(A,D),contact(D,B),coord2(B,C),large(C).
+zendo(A):- piece(A,B),blue(B),piece(A,C),strange(C),red(C).
+zendo(A):- piece(A,B),piece(A,E),coord1(E,D),size(B,D),coord2(B,C),medium(C).
+%time,3601.438865184784

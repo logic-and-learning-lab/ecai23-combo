@@ -1,0 +1,3 @@
+next_value(A,B):- c_pressButton(D),c_player(C),does(A,C,D),c5(B).
+next_value(A,B):- c_noop(C),c_player(D),does(A,D,C),my_succ(B,E),my_true_value(A,E).
+%time,8.582403659820557

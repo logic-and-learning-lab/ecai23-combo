@@ -1,0 +1,5 @@
+f(A):- head(A,B),c_6(B).
+f(A):- head(A,B),c_9(B).
+f(A):- tail(A,B),f(B).
+f(A):- head(A,B),c_7(B).
+%time,367.4757161140442

@@ -1,0 +1,4 @@
+next_score(A,B,C):- does(A,B,D),true_score(A,B,C),action_end_game(D).
+next_score(A,B,C):- true_score(A,B,C),opponent(B,E),action_lay_claim(D),does(A,E,D).
+next_score(A,B,C):- action_lay_claim(D),does(A,B,D),succ(C,E),true_score(A,B,E).
+%time,37.66954326629639

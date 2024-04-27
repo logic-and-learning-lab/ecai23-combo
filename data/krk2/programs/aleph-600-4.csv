@@ -1,0 +1,2 @@
+f(A):-cell(A,B,w,k),cell(A,C,b,k),cell(A,D,w,r).
+%time,1.343548059463501

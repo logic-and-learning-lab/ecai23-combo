@@ -1,0 +1,2 @@
+f(A):- cell(A,C,E,F),nextrank(C,D),cell(A,D,E,B),king(F),rook(B).
+%time,600.7002189159393

@@ -1,0 +1,9 @@
+f([15,45,75,85,98]).
+f([33,39,45,68,90]).
+f(A):-head(A,B),one(B),tail(A,C),head(C,D),odd(D).
+f(E):-tail(E,F),tail(F,G),tail(G,H),f(H),f(F).
+f(I):-tail(I,J),tail(J,K),head(K,L),even(L),f(K).
+f(M):-tail(M,N),head(N,O),tail(N,P),head(P,O).
+f(Q):-head(Q,R),decrement(R,S),decrement(S,T),decrement(T,U),one(U).
+f([8,37,55,56,65,76,77,87]).
+%time,1.0440998077392578

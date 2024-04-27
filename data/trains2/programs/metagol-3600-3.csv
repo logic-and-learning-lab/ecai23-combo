@@ -1,0 +1,5 @@
+f(A):-f_1(A),f_2(A).
+f_1(A):-has_car(A,B),f_2(B).
+f_2(A):-two_wheels(A),roof_open(A).
+f_2(A):-has_car(A,B),roof_closed(B).
+%time,1884.2553091049194

@@ -1,0 +1,5 @@
+next_control(A,B):- agent_white(B),true_control(A,C),agent_black(C).
+next_control(A,B):- int_0(C),true_whitePayoff(A,C),agent_black(B).
+next_control(A,B):- true_whitePayoff(A,C),agent_black(B),int_10(C).
+next_control(A,B):- does(A,B,C),action_noop(C).
+%time,602.4030351638794

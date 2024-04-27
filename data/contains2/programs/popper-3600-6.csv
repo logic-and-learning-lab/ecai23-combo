@@ -1,0 +1,4 @@
+f(A):- tail(A,B),f(B).
+f(A):- head(A,B),c_9(B).
+f(A):- head(A,B),c_6(B).
+%time,344.6064238548279

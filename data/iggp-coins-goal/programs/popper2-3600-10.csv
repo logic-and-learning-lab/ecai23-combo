@@ -1,0 +1,3 @@
+goal(A,B,C):- pos_5(D),role(B),score_100(C),my_true_step(A,D).
+goal(A,B,C):- role(B),score_0(C),my_true_cell(A,E,D),c_onecoin(D),my_pos(E).
+%time,136.40200901031494

@@ -1,0 +1,2 @@
+f(A):- cell(A,C,F,D),nextfile(C,G),white(F),cell(A,E,B,D),nextfile(E,G),black(B).
+%time,2186.384706020355

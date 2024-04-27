@@ -1,0 +1,3 @@
+f(A):-cell(A,B,C,D),samefile(B,E),cell(A,E,F,D),distance(E,B,G),two(G).
+f(H):-cell(H,I,J,K),samerank(I,L),white(J),cell(H,L,M,K),black(M).
+%time,9.882220029830933

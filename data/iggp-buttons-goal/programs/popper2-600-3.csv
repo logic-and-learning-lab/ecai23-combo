@@ -1,0 +1,5 @@
+goal(A,B,C):- int_0(C),prop_r(D),not_my_true(A,D),role(B).
+goal(A,B,C):- prop_p(D),int_0(C),role(B),not_my_true(A,D).
+goal(A,B,C):- int_0(C),role(B),prop_q(D),not_my_true(A,D).
+goal(A,B,C):- prop_p(D),prop_7(F),my_true(A,D),role(B),prop_q(E),my_true(A,E),int_100(C),my_true(A,F).
+%time,2.819847822189331

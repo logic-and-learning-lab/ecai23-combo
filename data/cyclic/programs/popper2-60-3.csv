@@ -1,0 +1,3 @@
+f(A):- edge(C,A),edge(A,B),edge(B,C).
+f(A):- edge(C,D),edge(D,A),edge(A,B),edge(B,C).
+%time,7.405304908752441

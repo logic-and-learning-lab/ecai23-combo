@@ -1,0 +1,2 @@
+f(A):- edge(A,B),edge(A,C),diff(B,C).
+%time,5.8432440757751465

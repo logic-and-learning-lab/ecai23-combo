@@ -1,0 +1,6 @@
+goal(A,B,C):- pos_2(D),my_true_step(A,D),score_0(C),role(B).
+goal(A,B,C):- pos_5(D),my_true_step(A,D),score_100(C),role(B).
+goal(A,B,C):- my_true_step(A,D),score_0(C),role(B),pos_1(D).
+goal(A,B,C):- my_true_step(A,D),pos_4(D),score_0(C),role(B).
+goal(A,B,C):- my_true_step(A,D),pos_3(D),score_0(C),role(B).
+%time,3601.3795688152313

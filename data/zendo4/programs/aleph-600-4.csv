@@ -1,0 +1,5 @@
+zendo(14).
+zendo(A):-piece(A,B),contact(B,C),green(C),red(B).
+zendo(D):-piece(D,E),blue(E),lhs(E).
+zendo(F):-piece(F,G),contact(G,H),strange(H),upright(G).
+%time,1.7266969680786133

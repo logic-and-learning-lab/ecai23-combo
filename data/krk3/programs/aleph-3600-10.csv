@@ -1,0 +1,4 @@
+f(A):-cell(A,B,C,D),samerank(B,E),rook(D),cell(A,E,F,G),king(G),black(F).
+f(H):-cell(H,I,J,K),samefile(I,L),white(J),cell(H,L,M,N),king(N),black(M).
+f(O):-cell(O,P,Q,R),samefile(P,S),rook(R),cell(O,S,Q,T),king(T).
+%time,34.44259309768677

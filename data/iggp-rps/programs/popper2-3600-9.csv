@@ -1,0 +1,4 @@
+next_score(A,B,C):- does(A,B,D),does(A,E,D),different(B,E),my_true_score(A,B,C).
+next_score(A,B,C):- does(A,E,F),different(E,G),my_true_score(A,G,C),does(A,B,D),beats(F,D).
+next_score(A,B,C):- does(A,B,G),my_true_score(A,B,E),does(A,D,F),my_succ(E,C),player(D),beats(G,F).
+%time,157.23011302947998

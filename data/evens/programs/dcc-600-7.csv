@@ -1,0 +1,3 @@
+f(A):- head(A,C),tail(A,B),even(C),f(B).
+f(A):- empty(A).
+%time,25.761055946350098

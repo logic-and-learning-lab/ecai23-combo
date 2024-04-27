@@ -1,0 +1,2 @@
+f(A):- cell(A,E,F,B),rook(B),cell(A,D,F,C),samefile(D,E),king(C).
+%time,600.6613509654999

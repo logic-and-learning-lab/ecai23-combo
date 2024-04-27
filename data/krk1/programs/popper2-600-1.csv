@@ -1,0 +1,2 @@
+f(A):- cell(A,G,E,F),cell(A,B,E,C),distance(G,B,D),one(D),king(C),rook(F).
+%time,17.20882821083069

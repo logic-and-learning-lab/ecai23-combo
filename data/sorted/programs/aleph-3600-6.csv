@@ -1,0 +1,9 @@
+f([43]).
+f([19,29,32,44,49,87,87]).
+f([18,38,61,83,92]).
+f([5,10,25,59,97]).
+f(A):-head(A,B),tail(A,C),head(C,D),geq(D,B),f(C).
+f(E):-head(E,F),tail(E,G),head(G,H),decrement(H,F).
+f(I):-tail(I,J),tail(J,K),f(K).
+f(L):-head(L,M),tail(L,N),head(N,O),decrement(O,P),decrement(P,M).
+%time,1.0089380741119385

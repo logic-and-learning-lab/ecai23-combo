@@ -1,0 +1,9 @@
+next_score(8,black,80).
+next_score(6,black,90).
+next_score(4,white,80).
+next_score(13,white,90).
+next_score(A,B,C):-action_end_game(D),true_score(A,B,C),does(A,B,D).
+next_score(11,black,95).
+next_score(E,F,G):-succ(G,H),action_lay_claim(I),true_score(E,F,H),does(E,F,I).
+next_score(J,K,L):-action_lay_claim(M),true_score(J,K,L),true_claim_made_by(J,K),does(J,N,M).
+%time,525.5114760398865

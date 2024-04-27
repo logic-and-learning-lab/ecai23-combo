@@ -1,0 +1,4 @@
+zendo(A):- piece(A,B),lhs(B),green(B).
+zendo(A):- piece(A,B),lhs(B),piece(A,C),strange(C),green(C).
+zendo(A):- piece(A,C),green(C),piece(A,B),red(B),upright(C).
+%time,61.48927688598633

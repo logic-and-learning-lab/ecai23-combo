@@ -1,0 +1,2 @@
+f(A,B):- gender(A,C),gender(B,C),movie(D,B),movie(D,A).
+%time,5.279613971710205

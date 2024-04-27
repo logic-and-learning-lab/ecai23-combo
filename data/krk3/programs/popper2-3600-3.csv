@@ -1,0 +1,3 @@
+f(A):- cell(A,E,B,D),white(B),samerank(E,C),cell(A,C,B,F),rook(F),king(D).
+f(A):- cell(A,C,B,F),rook(F),cell(A,E,B,D),king(D),white(B),samefile(C,E).
+%time,3600.8510451316833

@@ -1,0 +1,5 @@
+zendo(A):-small(A).
+zendo(A):-piece(A,B),zendo_1(B).
+zendo_1(A):-contact(A,B),upright(B).
+zendo_1(A):-blue(A),lhs(A).
+%time,25.754742860794067

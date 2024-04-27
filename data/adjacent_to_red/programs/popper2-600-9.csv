@@ -1,0 +1,2 @@
+f(A):- edge(A,C),colour(C,B),red(B).
+%time,1.6132447719573975

@@ -1,0 +1,2 @@
+f(A):- cell(A,F,B,C),white(B),cell(A,E,D,C),black(D),samerank(E,F).
+%time,60.98205280303955

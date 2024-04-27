@@ -1,0 +1,2 @@
+f(A):- cell(A,E,B,C),rook(C),cell(A,F,B,D),samerank(F,E),king(D).
+%time,600.8560268878937

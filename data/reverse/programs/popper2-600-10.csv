@@ -1,0 +1,3 @@
+f(A,B):- empty_out(A),empty_out(B).
+f(A,B):- tail(A,E),head(A,C),f(E,D),my_append(D,C,B).
+%time,53.53114604949951
